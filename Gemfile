@@ -12,9 +12,6 @@ gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
 
-# Optional: HTML proofer for testing
-gem "html-proofer", "~> 5.0", group: :test
-
 # Platform-specific gems
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
