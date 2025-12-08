@@ -2,10 +2,20 @@
 
 source "https://rubygems.org"
 
-gemspec
+# Jekyll and theme
+gem "jekyll"
+gem "jekyll-theme-chirpy"
 
+# Jekyll plugins
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+
+# Optional: HTML proofer for testing
 gem "html-proofer", "~> 5.0", group: :test
 
+# Platform-specific gems
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
