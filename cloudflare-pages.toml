@@ -1,0 +1,11 @@
+# Cloudflare Pages Build Configuration
+# This file helps Cloudflare Pages understand how to build your Jekyll site
+
+[build]
+command = "bundle install && bundle exec jekyll build"
+output_directory = "_site"
+
+[build.environment_variables]
+JEKYLL_ENV = "production"
+RUBY_VERSION = "3.1"
+

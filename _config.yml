@@ -22,8 +22,9 @@ description: >- # used by seo meta and the atom feed
   A centralized documentation site for home lab configurations, network diagrams, installation guides, and technical notes.
 
 # Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://nasrullaameen.github.io"
+# E.g. 'https://your-project.pages.dev' for Cloudflare Pages, or your custom domain
+# Note: it does not end with a '/'.
+url: ""  # Update this with your Cloudflare Pages URL after deployment
 
 github:
   username: nasrullaameen # change to your GitHub username
