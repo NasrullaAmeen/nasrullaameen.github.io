@@ -22,9 +22,8 @@ description: >- # used by seo meta and the atom feed
   A centralized documentation site for home lab configurations, network diagrams, installation guides, and technical notes.
 
 # Fill in the protocol & hostname for your site.
-# E.g. 'https://your-project.pages.dev' for Cloudflare Pages, or your custom domain
-# Note: it does not end with a '/'.
-url: ""  # Update this with your Cloudflare Pages URL after deployment
+# E.g. 'https://username.github.io', note that it does not end with a '/'.
+url: ""
 
 github:
   username: nasrullaameen # change to your GitHub username
@@ -100,6 +99,10 @@ cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
 # You can use a local image or a remote URL (e.g., GitHub profile picture)
+# Options:
+# - GitHub: "https://github.com/nasrullaameen.png"
+# - Local: "/assets/img/avatar.jpg" (place image in assets/img/)
+# - Any CORS-enabled image URL
 avatar: "https://github.com/nasrullaameen.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
