@@ -56,6 +56,11 @@ foreach ($file in $files) {
         continue
     }
     
+    # Skip the security check script itself (it contains the patterns we're checking for)
+    if ($file -like "*check-before-commit*") {
+        continue
+    }
+    
     # Skip binary files
     $extension = [System.IO.Path]::GetExtension($file).ToLower()
     $binaryExtensions = @('.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg', '.woff', '.woff2', '.ttf', '.eot', '.gem')
@@ -99,7 +104,7 @@ if ($issuesFound) {
     Write-Host "  - Check docs/reference/PRE_COMMIT_CHECKLIST.md for details" -ForegroundColor Cyan
     exit 1
 } else {
-    Write-Host "✓ Check complete! No obvious sensitive data found." -ForegroundColor Green
+    Write-Host "Check complete! No obvious sensitive data found." -ForegroundColor Green
     Write-Host "  Checked $checkedFiles file(s)" -ForegroundColor Gray
     Write-Host ""
     Write-Host "Remember to:" -ForegroundColor Yellow

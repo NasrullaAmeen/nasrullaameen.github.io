@@ -5,6 +5,11 @@
   color: gray;
 }
 
+/* Override default link color in categories - JavaScript will set specific colors for tags */
+.categories a {
+  color: inherit !important;
+}
+
 .categories {
   margin-bottom: 2rem;
   border-color: var(--categories-border);

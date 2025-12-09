@@ -1,19 +1,37 @@
 @use '../abstracts/breakpoints' as bp;
 
 .tag {
-  border-radius: 0.7em;
-  padding: 6px 8px 7px;
   margin-right: 0.8rem;
-  line-height: 3rem;
+  line-height: 1.5rem;
   letter-spacing: 0;
-  border: 1px solid var(--tag-border) !important;
-  box-shadow: 0 0 3px 0 var(--tag-shadow);
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  /* Override default link color - JavaScript will set specific colors */
+  color: inherit !important;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
 
   span {
-    margin-left: 0.6em;
-    font-size: 0.7em;
-    font-family: Oswald, sans-serif;
+    margin-left: 0.4em;
+    font-size: 0.85em;
+    font-family: inherit;
+    opacity: 0.7;
+    /* Keep span color muted regardless of tag color */
+    color: var(--text-muted-color) !important;
   }
+}
+
+/* Ensure tags in #tags container override default link colors */
+#tags a.tag {
+  color: inherit !important;
 }
 
 #tags {

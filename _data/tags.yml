@@ -1,0 +1,192 @@
+# Tag Colors Configuration
+# Comprehensive color palette from multiple sources:
+# - Material Design: https://materialui.co/colors
+# - Flat UI Colors: https://materialui.co/flatuicolors
+# - HTML Colors: https://materialui.co/htmlcolors
+# - Social Colors: https://materialui.co/socialcolors
+# - Metro Colors: https://materialui.co/metrocolors
+# - Fluent Colors: https://materialui.co/fluent-colors
+# - Tailwind Colors: https://tailwindcolor.com/
+#
+# Each tag gets a unique color based on its name hash
+
+palette:
+  # Material Design Colors (500 shades)
+  - "#f44336"  # Red 500
+  - "#e91e63"  # Pink 500
+  - "#9c27b0"  # Purple 500
+  - "#673ab7"  # Deep Purple 500
+  - "#3f51b5"  # Indigo 500
+  - "#2196f3"  # Blue 500
+  - "#03a9f4"  # Light Blue 500
+  - "#00bcd4"  # Cyan 500
+  - "#009688"  # Teal 500
+  - "#4caf50"  # Green 500
+  - "#8bc34a"  # Light Green 500
+  - "#cddc39"  # Lime 500
+  - "#ffeb3b"  # Yellow 500
+  - "#ffc107"  # Amber 500
+  - "#ff9800"  # Orange 500
+  - "#ff5722"  # Deep Orange 500
+  
+  # Flat UI Colors
+  - "#1abc9c"  # Turquoise
+  - "#16a085"  # Greensea
+  - "#2ecc71"  # Emerald
+  - "#27ae60"  # Nephritis
+  - "#3498db"  # Peter River
+  - "#2980b9"  # Belize Hole
+  - "#9b59b6"  # Amethyst
+  - "#8e44ad"  # Wisteria
+  - "#34495e"  # Wet Asphalt
+  - "#2c3e50"  # Midnight Blue
+  - "#f1c40f"  # Sunflower
+  - "#f39c12"  # Orange
+  - "#e67e22"  # Carrot
+  - "#d35400"  # Pumpkin
+  - "#e74c3c"  # Alizarin
+  - "#c0392b"  # Pomegranate
+  
+  # HTML Colors (vibrant selection)
+  - "#ff6347"  # Tomato
+  - "#ff4500"  # Orange Red
+  - "#ff8c00"  # Dark Orange
+  - "#ffd700"  # Gold
+  - "#32cd32"  # Lime Green
+  - "#00fa9a"  # Medium Spring Green
+  - "#00ced1"  # Dark Turquoise
+  - "#1e90ff"  # Dodger Blue
+  - "#4169e1"  # Royal Blue
+  - "#9370db"  # Medium Purple
+  - "#ff1493"  # Deep Pink
+  - "#ff69b4"  # Hot Pink
+  - "#dc143c"  # Crimson
+  
+  # Social Colors
+  - "#1877f2"  # Facebook
+  - "#0088cc"  # Messenger
+  - "#1da1f2"  # Twitter
+  - "#0077b5"  # LinkedIn
+  - "#00aff0"  # Skype
+  - "#0061ff"  # Dropbox
+  - "#21759b"  # WordPress
+  - "#1ab7ea"  # Vimeo
+  - "#0077b5"  # SlideShare
+  - "#4680c2"  # VK
+  - "#35465c"  # Tumblr
+  - "#7c3aed"  # Yahoo
+  - "#bd081c"  # Pinterest
+  - "#ff0000"  # YouTube
+  - "#ff4500"  # Reddit
+  - "#b92b27"  # Quora
+  - "#d32323"  # Yelp
+  - "#e6162d"  # Weibo
+  - "#da552f"  # Product Hunt
+  - "#ff6600"  # Hacker News
+  - "#ff8800"  # SoundCloud
+  - "#fc4f08"  # Blogger
+  - "#fffc00"  # Snapchat
+  - "#25d366"  # WhatsApp
+  - "#09b83e"  # WeChat
+  - "#00c300"  # Line
+  - "#00ab6c"  # Medium
+  - "#00b488"  # Vine
+  - "#4a154b"  # Slack
+  - "#e4405f"  # Instagram
+  - "#ea4c89"  # Dribbble
+  - "#0063dc"  # Flickr
+  - "#f94877"  # Foursquare
+  - "#000000"  # TikTok
+  - "#1769ff"  # Behance
+  
+  # Metro Colors
+  - "#a4c400"  # Lime
+  - "#60a917"  # Green
+  - "#008a00"  # Emerald
+  - "#00aba9"  # Teal
+  - "#1ba1e2"  # Cyan
+  - "#0050ef"  # Cobalt
+  - "#6a00ff"  # Indigo
+  - "#aa00ff"  # Violet
+  - "#f472d0"  # Pink
+  - "#d80073"  # Magenta
+  - "#a20025"  # Crimson
+  - "#e51400"  # Red
+  - "#fa6800"  # Orange
+  - "#f0a30a"  # Amber
+  - "#e3c800"  # Yellow
+  - "#825a2c"  # Brown
+  - "#6d8764"  # Olive
+  - "#647687"  # Steel
+  - "#76608a"  # Mauve
+  - "#a0522d"  # Sienna
+  
+  # Fluent Colors
+  - "#ffb900"  # Fluent Yellow
+  - "#e74856"  # Fluent Red
+  - "#0078d7"  # Fluent Blue
+  - "#0099bc"  # Fluent Cyan
+  - "#7a7574"  # Fluent Gray
+  - "#767676"  # Fluent Dark Gray
+  - "#ff8c00"  # Fluent Orange
+  - "#e81123"  # Fluent Red Alt
+  - "#0063b1"  # Fluent Blue Alt
+  - "#2d7d9a"  # Fluent Teal
+  - "#5d5a58"  # Fluent Brown
+  - "#4c4a48"  # Fluent Dark Brown
+  - "#f7630c"  # Fluent Orange Alt
+  - "#ea005e"  # Fluent Pink
+  - "#8e8cd8"  # Fluent Purple
+  - "#00b7c3"  # Fluent Cyan Alt
+  - "#68768a"  # Fluent Slate
+  - "#69797e"  # Fluent Steel
+  - "#ca5010"  # Fluent Rust
+  - "#c30052"  # Fluent Magenta
+  - "#6b69d6"  # Fluent Indigo
+  - "#38387a"  # Fluent Navy
+  - "#515c6b"  # Fluent Dark Slate
+  - "#4a5459"  # Fluent Charcoal
+  - "#da3b01"  # Fluent Rust Alt
+  - "#e3008c"  # Fluent Pink Alt
+  - "#8764b8"  # Fluent Purple Alt
+  - "#00b294"  # Fluent Teal Alt
+  - "#567c73"  # Fluent Green Gray
+  - "#647c64"  # Fluent Olive
+  - "#ef6950"  # Fluent Coral
+  - "#bf0077"  # Fluent Rose
+  - "#744da9"  # Fluent Violet
+  - "#185746"  # Fluent Forest
+  - "#486860"  # Fluent Sage
+  - "#525e54"  # Fluent Moss
+  - "#d13438"  # Fluent Red Deep
+  - "#c239b3"  # Fluent Magenta Deep
+  - "#b146c2"  # Fluent Purple Deep
+  - "#00cc6a"  # Fluent Green
+  - "#498205"  # Fluent Green Deep
+  - "#847545"  # Fluent Khaki
+  - "#ff4343"  # Fluent Red Bright
+  - "#9a0089"  # Fluent Magenta Bright
+  - "#881798"  # Fluent Purple Bright
+  - "#10893e"  # Fluent Green Bright
+  - "#107c10"  # Fluent Green Dark
+  - "#7e735f"  # Fluent Tan
+  
+  # Tailwind Colors (500 shades - vibrant selection)
+  - "#ef4444"  # Tailwind Red 500
+  - "#f97316"  # Tailwind Orange 500
+  - "#f59e0b"  # Tailwind Amber 500
+  - "#eab308"  # Tailwind Yellow 500
+  - "#84cc16"  # Tailwind Lime 500
+  - "#22c55e"  # Tailwind Green 500
+  - "#10b981"  # Tailwind Emerald 500
+  - "#14b8a6"  # Tailwind Teal 500
+  - "#06b6d4"  # Tailwind Cyan 500
+  - "#0ea5e9"  # Tailwind Sky 500
+  - "#3b82f6"  # Tailwind Blue 500
+  - "#6366f1"  # Tailwind Indigo 500
+  - "#8b5cf6"  # Tailwind Violet 500
+  - "#a855f7"  # Tailwind Purple 500
+  - "#d946ef"  # Tailwind Fuchsia 500
+  - "#ec4899"  # Tailwind Pink 500
+  - "#f43f5e"  # Tailwind Rose 500
+

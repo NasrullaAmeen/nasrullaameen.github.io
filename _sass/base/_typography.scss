@@ -170,6 +170,12 @@ main {
     a:not(:hover) {
       @extend %no-bottom-border;
     }
+    
+    /* Override default link color for tags - JavaScript will set specific colors */
+    a.tag,
+    a.post-tag {
+      color: inherit !important;
+    }
   }
 
   @include bp.lte(bp.get(sm)) {

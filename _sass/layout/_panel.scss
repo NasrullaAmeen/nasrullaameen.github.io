@@ -39,12 +39,21 @@
   .post-tag {
     line-height: 1.05rem;
     font-size: 0.85rem;
-    border-radius: 0.8rem;
-    padding: 0.3rem 0.5rem;
-    margin: 0 0.35rem 0.5rem 0;
+    background: none !important;
+    border: none !important;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 0.5rem 0.5rem 0;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    /* Default grey color for trending tags - color shows on hover */
+    color: var(--text-muted-color) !important;
 
     &:hover {
-      transition: all 0.3s ease-in;
+      text-decoration: underline;
+      /* Use the color stored in CSS custom property */
+      color: var(--tag-hover-color, var(--text-muted-color)) !important;
     }
   }
 

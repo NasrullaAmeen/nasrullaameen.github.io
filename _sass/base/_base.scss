@@ -229,16 +229,20 @@ main {
 
 .post-tag {
   display: inline-block;
-  min-width: 2rem;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: 1px solid var(--btn-border-color);
-  padding: 0 0.4rem;
-  color: var(--text-muted-color);
-  line-height: 1.3rem;
+  background: none !important;
+  border: none !important;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
 
   &:not(:last-child) {
-    margin-right: 0.2rem;
+    margin-right: 0.8rem;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
   }
 }
 

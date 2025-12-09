@@ -275,7 +275,7 @@ This site uses the [Chirpy Jekyll theme](https://github.com/cotes2020/jekyll-the
 
 #### Project Structure & History
 - **[STRUCTURE.md](STRUCTURE.md)** - Project file organization
-- **[CHANGELOG.md](CHANGELOG.md)** - Project changelog
+- **[docs/reference/CHANGELOG.md](docs/reference/CHANGELOG.md)** - Project changelog
 
 ### Theme Documentation
 

@@ -197,7 +197,7 @@ sync_file() {
     
     # Copy file with error handling
     if cp "$source_file" "$dest_path" 2>/dev/null; then
-        echo "  SYNCED: $filename -> $dest_filename"
+    echo "  SYNCED: $filename -> $dest_filename"
     else
         echo "  ERROR: Failed to copy file: $filename" >&2
         return 1
@@ -221,7 +221,7 @@ sync_all() {
     for file in "${files[@]}"; do
         if [ -f "$file" ]; then
             if sync_file "$file"; then
-                ((synced_count++))
+            ((synced_count++))
             else
                 ((error_count++))
             fi
@@ -230,7 +230,7 @@ sync_all() {
     
     echo ""
     if [ $error_count -eq 0 ]; then
-        echo "Sync complete! Processed $synced_count file(s)."
+    echo "Sync complete! Processed $synced_count file(s)."
     else
         echo "Sync complete with errors. Processed $synced_count file(s), $error_count error(s)." >&2
     fi

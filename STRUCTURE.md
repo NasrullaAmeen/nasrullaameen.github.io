@@ -32,7 +32,7 @@ nasrullaameen.github.io/
 │   │   ├── PRE_COMMIT_CHECKLIST.md
 │   │   ├── CONTRIBUTING.md
 │   │   ├── CODE_OF_CONDUCT.md
-│   │   └── CHANGELOG.md
+│   │   └── CHANGELOG.md     # Project changelog (moved from root)
 │   ├── OBSIDIAN_SETUP.md    # Obsidian integration guide
 │   └── README.md            # Documentation index
 ├── obsidian/                # Obsidian integration files
@@ -106,11 +106,7 @@ Contains all Obsidian integration files:
 - **LICENSE**: License file
 - **_config.yml**: Jekyll configuration
 
-### Convenience Wrappers (Root)
-- **start-local-server.ps1**: Wrapper for `scripts/start-local-server.ps1`
-- **sync-from-vault.ps1**: Wrapper for `scripts/sync-from-vault.ps1`
-
-These wrappers allow running scripts from the root directory while keeping actual scripts organized in `scripts/`.
+**Note:** CHANGELOG.md has been moved to `docs/reference/CHANGELOG.md` to keep root directory minimal.
 
 ## File Organization Principles
 
@@ -128,7 +124,8 @@ These wrappers allow running scripts from the root directory while keeping actua
 The root directory contains only:
 - Essential configuration files
 - Main documentation (README.md, STRUCTURE.md)
-- Convenience wrapper scripts
 - Dependency files (Gemfile, package.json)
+
+**Note:** All scripts are in `scripts/` folder. CHANGELOG.md is in `docs/reference/`.
 
 All other files are organized in appropriate subdirectories for better maintainability and clarity.

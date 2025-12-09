@@ -41,6 +41,19 @@
   %}
 {% endif %}
 
+<!-- Tag Colors Script - Ensures unique colors for each tag -->
+{% if page.layout == 'home'
+  or page.layout == 'post'
+  or page.layout == 'archives'
+  or page.layout == 'category'
+  or page.layout == 'tag'
+  or page.layout == 'page'
+  or page.url == '/tags/'
+  or page.url == '/categories/'
+%}
+<script src="{{ '/assets/js/tag-colors.js' | relative_url }}"></script>
+{% endif %}
+
 {% if page.content contains '<h2' or page.content contains '<h3' and site.toc and page.toc %}
   {% assign urls = urls | append: ',' | append: site.data.origin[type].toc.js %}
 {% endif %}

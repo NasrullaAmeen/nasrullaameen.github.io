@@ -38,8 +38,35 @@
     <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       {% for tag_name in trending_tags %}
+        {% assign tag_slug = tag_name | slugify %}
+        {% assign hash = 0 %}
+        {% assign hash = hash | plus: tag_slug.size %}
+        {% assign hash = hash | times: 31 %}
+        {% for i in (0..20) %}
+          {% assign char = tag_slug | slice: i %}
+          {% if char %}
+            {% assign char_code = char | ord %}
+            {% assign hash = hash | plus: char_code %}
+            {% assign hash = hash | times: 17 %}
+            {% assign hash = hash | plus: i %}
+            {% assign hash = hash | times: 7 %}
+          {% endif %}
+        {% endfor %}
+        {% assign hash = hash | plus: tag_name.size %}
+        {% assign hash = hash | times: 13 %}
+        {% assign palette_size = site.data.tags.palette.size %}
+        {% assign color_index = hash | modulo: palette_size %}
+        {% if color_index < 0 %}
+          {% assign color_index = color_index | times: -1 %}
+          {% assign color_index = color_index | modulo: palette_size %}
+        {% endif %}
+        {% assign text_color = site.data.tags.palette[color_index] %}
         {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
-        <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
+        <a 
+          class="post-tag" 
+          href="{{ url | relative_url }}"
+          data-tag="{{ tag_name | slugify }}"
+        >{{ tag_name }}</a>
       {% endfor %}
     </div>
   </section>
