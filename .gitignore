@@ -3,10 +3,11 @@
 vendor
 Gemfile.lock
 
-# Jekyll cache
+# Jekyll cache and build output
 .jekyll-cache
 .jekyll-metadata
 _site
+.sass-cache
 
 # RubyGems
 *.gem
@@ -14,14 +15,87 @@ _site
 # NPM dependencies
 node_modules
 package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDE configurations
+# IDE configurations (keep minimal VS Code settings)
 .idea
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
+*.code-workspace
+.cursorrules
 
-# Misc
+# Misc build artifacts
 _sass/vendors
 assets/js/dist
+*.min.js
+*.min.css
+
+# Personal/Sensitive Configuration Files
+obsidian/vault-config.json
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+*.pem
+*.p12
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+*.orig
+
+# User-specific files (optional - can be committed if you want)
+*.local
+*.user
+
+# Windows specific
+*.lnk
+desktop.ini
+Thumbs.db
+
+# Personal notes and drafts (if any)
+_drafts/
+notes/
+personal/
+
+# Test files
+test/
+tests/
+spec/
+*.test.js
+*.spec.js
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Debug files
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

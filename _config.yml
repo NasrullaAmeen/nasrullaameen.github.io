@@ -14,12 +14,12 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: My Documentation Site # the main title
+title: My IT Journey # the main title
 
-tagline: Home Lab Documentation & Notes # it will display as the subtitle
+tagline: Output Hub - Learning, Notes & Documentation # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A centralized documentation site for home lab configurations, network diagrams, installation guides, and technical notes.
+  My IT journey output hub - documenting my learning path, technical notes, experiments, and knowledge gained along the way. Built from my notes, for continuous learning and sharing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
