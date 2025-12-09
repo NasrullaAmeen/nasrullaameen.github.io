@@ -268,12 +268,14 @@ This site uses the [Chirpy Jekyll theme](https://github.com/cotes2020/jekyll-the
 
 #### Reference Documentation
 - **[docs/reference/SECURITY.md](docs/reference/SECURITY.md)** - Security best practices
+- **[docs/reference/PRE_COMMIT_CHECKLIST.md](docs/reference/PRE_COMMIT_CHECKLIST.md)** - Pre-commit checklist
 - **[docs/reference/CONTRIBUTING.md](docs/reference/CONTRIBUTING.md)** - Contributing guidelines
 - **[docs/reference/CODE_OF_CONDUCT.md](docs/reference/CODE_OF_CONDUCT.md)** - Code of conduct
-- **[docs/reference/CHANGELOG.md](docs/reference/CHANGELOG.md)** - Changelog
+- **[docs/reference/CHANGELOG.md](docs/reference/CHANGELOG.md)** - Theme changelog (Chirpy)
 
-#### Project Structure
+#### Project Structure & History
 - **[STRUCTURE.md](STRUCTURE.md)** - Project file organization
+- **[CHANGELOG.md](CHANGELOG.md)** - Project changelog
 
 ### Theme Documentation
 

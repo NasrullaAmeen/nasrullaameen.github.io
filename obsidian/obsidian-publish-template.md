@@ -30,7 +30,7 @@ If you have the [Buttons](https://github.com/shabegom/buttons) plugin installed,
 ```button
 name 🚀 Publish to Website
 type shell
-action powershell.exe -File "C:\Users\darko\Documents\GitHub\nasrullaameen.github.io\scripts\sync-from-vault.ps1"
+action powershell.exe -File "C:\Users\YourName\Documents\GitHub\YourRepo\scripts\sync-from-vault.ps1"
 templater true
 ```
 ````
