@@ -44,6 +44,14 @@ obsidian/vault-config.json
 *.pem
 *.p12
 
+# Development files (not needed for GitHub Pages)
+docs/
+obsidian/
+scripts/
+tools/
+STRUCTURE.md
+docs/STRUCTURE.md
+
 # Temporary files
 *.tmp
 *.temp

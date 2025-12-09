@@ -1,9 +1,0 @@
-{
-  "vaultPath": "C:\\Users\\YourName\\Documents\\YourVault",
-  "publishFolder": "Publish",
-  "postsFolder": "_posts",
-  "dateFormat": "yyyy-MM-dd",
-  "autoDate": true,
-  "overwriteExisting": false
-}
-
