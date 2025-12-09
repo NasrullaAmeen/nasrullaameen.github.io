@@ -8,7 +8,8 @@
   background-color: var(--topbar-bg);
 
   @include bp.lt(bp.get(lg)) {
-    @include mx.slide(top 0.2s ease);
+    /* M3 Motion */
+    @include mx.slide(top 0.2s cubic-bezier(0.2, 0, 0, 1));
 
     left: 0;
   }
@@ -18,12 +19,27 @@
   @extend %btn-color;
 
   #breadcrumb {
+    /* M3 Body Large - Reduced */
     font-size: 1rem;
+    line-height: 1.25rem; /* Reduced from 1.5rem */
+    letter-spacing: 0.009375rem;
     color: var(--text-muted-color);
+    /* M3 Spacing - 8dp padding */
     padding-left: 0.5rem;
 
-    a:hover {
-      @extend %link-hover;
+    a {
+      /* M3 Motion */
+      transition: color 0.2s cubic-bezier(0.2, 0, 0, 1);
+      
+      &:hover {
+        @extend %link-hover;
+      }
+      
+      &:focus-visible {
+        outline: 2px solid var(--md-primary);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
     }
 
     span {

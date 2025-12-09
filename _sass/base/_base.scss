@@ -95,6 +95,8 @@ main {
   border: 0;
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
+  transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1),
+    transform 0.2s cubic-bezier(0.2, 0, 0, 1);
 
   &::before {
     @extend %rounded;
@@ -105,12 +107,15 @@ main {
     position: absolute;
     background-color: var(--card-hover-bg);
     opacity: 0;
-    transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1);
   }
 
   &:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+    
     &::before {
-      opacity: 0.3;
+      opacity: 0.08;
     }
   }
 }
@@ -428,10 +433,21 @@ mjx-container {
 
   @include bp.lg {
     margin-left: v.$sidebar-width;
+    /* M3 Motion for main content adjustment */
+    transition: margin-left 0.3s cubic-bezier(0.2, 0, 0, 1);
+    
+    /* Adjust when sidebar is collapsed */
+    body.sidebar-collapsed & {
+      margin-left: 4rem;
+    }
   }
 
   @include bp.xxxl {
     margin-left: v.$sidebar-width-large;
+    /* Adjust when sidebar is collapsed */
+    body.sidebar-collapsed & {
+      margin-left: 4rem;
+    }
   }
 
   > .container {

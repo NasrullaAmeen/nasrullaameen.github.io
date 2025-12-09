@@ -22,6 +22,8 @@
   .card {
     border: 0;
     background: none;
+    /* M3 Motion for card interactions */
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1);
 
     %img-radius {
       border-radius: v.$radius-lg v.$radius-lg 0 0;

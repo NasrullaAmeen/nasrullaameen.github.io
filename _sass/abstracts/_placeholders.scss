@@ -45,9 +45,12 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: var(--link-hover-color) !important;
+  border-bottom: 1px solid var(--link-hover-color);
   text-decoration: none;
+  /* M3 Motion */
+  transition: color 0.2s cubic-bezier(0.2, 0, 0, 1),
+    border-color 0.2s cubic-bezier(0.2, 0, 0, 1);
 }
 
 %link-color {
@@ -58,8 +61,9 @@
   border-bottom: 1px solid var(--link-underline-color);
 }
 
+/* Material Design 3 Motion - Standard easing */
 %clickable-transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
 }
 
 %no-cursor {
@@ -122,7 +126,7 @@
 }
 
 %text-sm {
-  font-size: 0.85rem;
+  font-size: 0.9375rem; /* 15px - increased from 0.85rem */
 }
 
 %text-xs {

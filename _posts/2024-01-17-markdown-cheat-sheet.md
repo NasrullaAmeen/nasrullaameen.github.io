@@ -3,7 +3,7 @@ title: Markdown Cheat Sheet
 description: >
   A quick reference guide for Markdown syntax used in documentation posts.
 author: Nasrulla Ameen
-date: 2024-01-17 09:00:00 -0600
+date: 2025-12-08 09:00:00 -0600
 categories: [Reference]
 tags: [markdown, syntax, reference]
 ---

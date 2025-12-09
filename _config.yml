@@ -11,6 +11,9 @@ lang: en
 # Change to your timezone › https://zones.arilyn.cc
 timezone: America/Chicago
 
+# Enable future-dated posts (allows posting on today's date)
+future: true
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
@@ -103,7 +106,7 @@ cdn: "https://chirpy-img.netlify.app"
 # - GitHub: "https://github.com/nasrullaameen.png"
 # - Local: "/assets/img/avatar.jpg" (place image in assets/img/)
 # - Any CORS-enabled image URL
-avatar: "https://github.com/nasrullaameen.png"
+avatar: "https://i.pinimg.com/1200x/b7/cb/eb/b7cbeb02e95893fbf48bcbd13ebaddbb.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

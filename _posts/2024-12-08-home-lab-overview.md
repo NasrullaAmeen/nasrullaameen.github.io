@@ -1,15 +1,15 @@
 ---
-title: My Home Lab Overview
+title: My HomeLab
 description: >
   An overview of my home lab infrastructure, hardware, and the services I'm running.
 author: Nasrulla Ameen
-date: 2024-12-08 10:00:00 -0600
+date: 2025-12-08 10:00:00 -0600
 categories: [Homelab, Infrastructure]
 tags: [homelab, hardware, infrastructure, overview]
 pin: true
 ---
 
-# My Home Lab Overview
+# My HomeLab
 
 Welcome to my home lab! This post provides an overview of my infrastructure, hardware, and the services I'm running.
 

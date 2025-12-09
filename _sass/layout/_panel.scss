@@ -5,7 +5,7 @@
 .access {
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 3rem;
+  margin-top: 2rem;
 
   &:only-child {
     position: -webkit-sticky;
@@ -18,12 +18,12 @@
     padding-left: 1rem;
 
     &:not(:first-child) {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
   }
 
   .content {
-    font-size: 0.9rem;
+    font-size: 0.9375rem; /* 15px - increased from 0.9rem */
   }
 }
 
@@ -37,28 +37,41 @@
   }
 
   .post-tag {
-    line-height: 1.05rem;
-    font-size: 0.85rem;
+    line-height: 1.25rem;
+    font-size: 0.9375rem; /* 15px - increased from 0.875rem */
     background: none !important;
     border: none !important;
-    border-radius: 0;
-    padding: 0;
-    margin: 0 0.5rem 0.5rem 0;
+    /* M3 Shape - Small component corner radius */
+    border-radius: 8px;
+    /* Reduced spacing - tighter tags */
+    padding: 0.25rem 0.375rem;
+    margin: 0 0.25rem 0.25rem 0;
     font-weight: 500;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    /* M3 Motion */
+    transition: background-color 0.2s cubic-bezier(0.2, 0, 0, 1),
+      color 0.2s cubic-bezier(0.2, 0, 0, 1),
+      transform 0.2s cubic-bezier(0.2, 0, 0, 1);
     /* Default grey color for trending tags - color shows on hover */
     color: var(--text-muted-color) !important;
 
     &:hover {
+      background-color: var(--md-state-hover);
+      transform: translateY(-1px);
       text-decoration: underline;
       /* Use the color stored in CSS custom property */
       color: var(--tag-hover-color, var(--text-muted-color)) !important;
     }
+    
+    &:focus-visible {
+      outline: 2px solid var(--md-primary);
+      outline-offset: 2px;
+    }
   }
 
   > :last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   @include bp.lt(bp.get(xl)) {

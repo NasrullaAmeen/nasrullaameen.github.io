@@ -1,8 +1,12 @@
 <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <button type="button" id="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Toggle Sidebar" style="border: none !important; outline: none !important; box-shadow: none !important;">
+    <i class="fas fa-chevron-left" id="sidebar-toggle-icon"></i>
+  </button>
+  
   <header class="profile-wrapper">
-    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+    <a href="{{ '/portfolio/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}
@@ -103,3 +107,43 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+<script>
+  // Inline sidebar toggle script (no build required)
+  (function() {
+    'use strict';
+    
+    const STORAGE_KEY = 'sidebar-collapsed';
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('sidebar-toggle');
+    
+    if (!sidebar || !toggleBtn) return;
+    
+    function toggleCollapse() {
+      const isCollapsed = sidebar.classList.contains('collapsed');
+      
+      if (isCollapsed) {
+        sidebar.classList.remove('collapsed');
+        document.body.classList.remove('sidebar-collapsed');
+        localStorage.removeItem(STORAGE_KEY);
+      } else {
+        sidebar.classList.add('collapsed');
+        document.body.classList.add('sidebar-collapsed');
+        localStorage.setItem(STORAGE_KEY, 'true');
+      }
+    }
+    
+    // Attach click handler
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleCollapse();
+    });
+    
+    // Initialize from localStorage
+    if (localStorage.getItem(STORAGE_KEY) === 'true') {
+      sidebar.classList.add('collapsed');
+      document.body.classList.add('sidebar-collapsed');
+    }
+  })();
+</script>

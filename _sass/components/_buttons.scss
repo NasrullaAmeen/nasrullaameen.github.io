@@ -16,7 +16,11 @@
   height: v.$back2top-size;
   border-radius: 50%;
   border: 1px solid var(--btn-backtotop-border-color);
-  transition: opacity 0.5s ease-in-out, transform 0.2s ease-out;
+  /* M3 Motion - Standard easing */
+  transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1),
+    transform 0.2s cubic-bezier(0.2, 0, 0, 1),
+    box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: var(--card-shadow);
 
   @include bp.lg {
     right: 5%;
@@ -34,8 +38,20 @@
   }
 
   &:hover {
-    transform: translate3d(0, -5px, 0);
-    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0);
+    box-shadow: var(--card-shadow-hover);
+    background-color: var(--md-surface-container);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--md-primary);
+    outline-offset: 2px;
+  }
+  
+  &:active {
+    transform: translate3d(0, -2px, 0);
+    -webkit-transform: translate3d(0, -2px, 0);
   }
 
   i {

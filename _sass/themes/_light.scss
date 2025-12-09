@@ -1,25 +1,79 @@
 @mixin styles {
-  /* Framework color */
-  --main-bg: white;
-  --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  /* Material Design 3 Color System - Light Theme */
+  
+  /* M3 Primary Colors */
+  --md-primary: #6750A4;
+  --md-primary-container: #EADDFF;
+  --md-on-primary: #FFFFFF;
+  --md-on-primary-container: #21005D;
+  
+  /* M3 Secondary Colors */
+  --md-secondary: #625B71;
+  --md-secondary-container: #E8DEF8;
+  --md-on-secondary: #FFFFFF;
+  --md-on-secondary-container: #1D192B;
+  
+  /* M3 Tertiary Colors */
+  --md-tertiary: #7D5260;
+  --md-tertiary-container: #FFD8E4;
+  --md-on-tertiary: #FFFFFF;
+  --md-on-tertiary-container: #31111D;
+  
+  /* M3 Error Colors */
+  --md-error: #BA1A1A;
+  --md-error-container: #FEDAD6;
+  --md-on-error: #FFFFFF;
+  --md-on-error-container: #410002;
+  
+  /* M3 Surface Colors */
+  --md-surface: #FFFBFE;
+  --md-surface-variant: #E7E0EC;
+  --md-on-surface: #1C1B1F;
+  --md-on-surface-variant: #49454F;
+  --md-surface-dim: #DDD8E1;
+  --md-surface-bright: #FFFBFE;
+  --md-surface-container-lowest: #FFFFFF;
+  --md-surface-container-low: #F7F2FA;
+  --md-surface-container: #F1ECF5;
+  --md-surface-container-high: #EBE6EF;
+  --md-surface-container-highest: #E6E1E9;
+  
+  /* M3 Outline Colors */
+  --md-outline: #79747E;
+  --md-outline-variant: #CAC4D0;
+  
+  /* M3 State Colors */
+  --md-state-hover: rgba(28, 27, 31, 0.08);
+  --md-state-focus: rgba(28, 27, 31, 0.12);
+  --md-state-pressed: rgba(28, 27, 31, 0.12);
+  --md-state-drag: rgba(28, 27, 31, 0.16);
+  
+  /* M3 Scrim */
+  --md-scrim: rgba(0, 0, 0, 0.32);
+  
+  /* Framework color - M3 aligned */
+  --main-bg: var(--md-surface);
+  --mask-bg: rgba(0, 0, 0, 0.4);
+  --main-border-color: var(--md-outline-variant);
 
-  /* Common color */
-  --text-color: #34343c;
-  --text-muted-color: #757575;
-  --text-muted-highlight-color: inherit;
-  --heading-color: #2a2a2a;
-  --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
-  --blockquote-text-color: #757575;
-  --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
-  --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
-  --btn-backtotop-color: #686868;
-  --btn-backtotop-border-color: #f1f1f1;
-  --checkbox-color: #c5c5c5;
-  --checkbox-checked-color: #07a8f7;
+  /* Common color - M3 aligned */
+  --text-color: var(--md-on-surface);
+  --text-muted-color: var(--md-on-surface-variant);
+  --text-muted-highlight-color: var(--md-on-surface);
+  --heading-color: var(--md-on-surface);
+  --label-color: var(--md-on-surface-variant);
+  --blockquote-border-color: var(--md-outline-variant);
+  --blockquote-text-color: var(--md-on-surface-variant);
+  --link-color: var(--md-primary);
+  --link-hover-color: var(--md-primary);
+  --link-underline-color: var(--md-outline-variant);
+  --link-focus-color: var(--md-primary);
+  --button-bg: var(--md-surface-container-low);
+  --btn-border-color: var(--md-outline-variant);
+  --btn-backtotop-color: var(--md-on-surface-variant);
+  --btn-backtotop-border-color: var(--md-outline-variant);
+  --checkbox-color: var(--md-outline);
+  --checkbox-checked-color: var(--md-primary);
   --img-bg: radial-gradient(circle, rgb(255 255 255) 0%, rgb(239 239 239) 100%);
   --shimmer-bg: linear-gradient(
     90deg,
@@ -28,24 +82,26 @@
     rgb(250 250 250 / 0%) 100%
   );
 
-  /* Sidebar */
-  --site-title-color: rgb(113 113 113);
-  --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223 233 241 / 64%);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  /* Sidebar - M3 aligned */
+  --site-title-color: var(--md-on-surface-variant);
+  --site-subtitle-color: var(--md-on-surface-variant);
+  --sidebar-bg: var(--md-surface-container-low);
+  --sidebar-border-color: var(--md-outline-variant);
+  --sidebar-muted-color: var(--md-on-surface-variant);
+  --sidebar-active-color: var(--md-primary);
+  --sidebar-hover-bg: var(--md-state-hover);
+  --sidebar-focus-bg: var(--md-state-focus);
+  --sidebar-pressed-bg: var(--md-state-pressed);
+  --sidebar-btn-bg: var(--md-surface);
+  --sidebar-btn-color: var(--md-on-surface-variant);
+  --avatar-border-color: var(--md-surface);
 
-  /* Topbar */
-  --topbar-bg: rgb(255 255 255 / 70%);
-  --topbar-text-color: rgb(78 78 78);
-  --search-border-color: rgb(240 240 240);
-  --search-icon-color: #c2c6cc;
-  --input-focus-border-color: #b8b8b8;
+  /* Topbar - M3 aligned */
+  --topbar-bg: rgba(255, 251, 254, 0.8);
+  --topbar-text-color: var(--md-on-surface);
+  --search-border-color: var(--md-outline-variant);
+  --search-icon-color: var(--md-on-surface-variant);
+  --input-focus-border-color: var(--md-primary);
 
   /* Home page */
   --post-list-text-color: dimgray;
@@ -57,10 +113,13 @@
   --toc-popup-border-color: lightgray;
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
-  --card-hover-bg: #e2e2e2;
-  --card-shadow: rgb(104 104 104 / 5%) 0 2px 6px 0,
-    rgb(211 209 209 / 15%) 0 0 0 1px;
+  /* Cards - M3 Elevation System */
+  --card-bg: var(--md-surface);
+  --card-hover-bg: var(--md-surface-container);
+  --card-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 6px 2px rgba(0, 0, 0, 0.15);
   --footnote-target-bg: lightcyan;
   --tb-odd-bg: #fbfcfd;
   --tb-border-color: #eaeaea;
