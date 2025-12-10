@@ -110,40 +110,55 @@
 
 <script>
   // Inline sidebar toggle script (no build required)
+  // Wait for DOM to be ready
   (function() {
     'use strict';
     
-    const STORAGE_KEY = 'sidebar-collapsed';
-    const sidebar = document.getElementById('sidebar');
-    const toggleBtn = document.getElementById('sidebar-toggle');
-    
-    if (!sidebar || !toggleBtn) return;
-    
-    function toggleCollapse() {
-      const isCollapsed = sidebar.classList.contains('collapsed');
+    function initSidebarToggle() {
+      const STORAGE_KEY = 'sidebar-collapsed';
+      const sidebar = document.getElementById('sidebar');
+      const toggleBtn = document.getElementById('sidebar-toggle');
       
-      if (isCollapsed) {
-        sidebar.classList.remove('collapsed');
-        document.body.classList.remove('sidebar-collapsed');
-        localStorage.removeItem(STORAGE_KEY);
-      } else {
+      if (!sidebar || !toggleBtn) {
+        // Retry if elements not found yet
+        setTimeout(initSidebarToggle, 100);
+        return;
+      }
+      
+      function toggleCollapse() {
+        const isCollapsed = sidebar.classList.contains('collapsed');
+        
+        if (isCollapsed) {
+          sidebar.classList.remove('collapsed');
+          document.body.classList.remove('sidebar-collapsed');
+          localStorage.removeItem(STORAGE_KEY);
+        } else {
+          sidebar.classList.add('collapsed');
+          document.body.classList.add('sidebar-collapsed');
+          localStorage.setItem(STORAGE_KEY, 'true');
+        }
+      }
+      
+      // Attach click handler
+      toggleBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleCollapse();
+      });
+      
+      // Initialize from localStorage
+      if (localStorage.getItem(STORAGE_KEY) === 'true') {
         sidebar.classList.add('collapsed');
         document.body.classList.add('sidebar-collapsed');
-        localStorage.setItem(STORAGE_KEY, 'true');
       }
     }
     
-    // Attach click handler
-    toggleBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      toggleCollapse();
-    });
-    
-    // Initialize from localStorage
-    if (localStorage.getItem(STORAGE_KEY) === 'true') {
-      sidebar.classList.add('collapsed');
-      document.body.classList.add('sidebar-collapsed');
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSidebarToggle);
+    } else {
+      // DOM already loaded
+      initSidebarToggle();
     }
   })();
 </script>
