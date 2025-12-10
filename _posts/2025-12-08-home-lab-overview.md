@@ -4,7 +4,7 @@ description: >
   An overview of my home lab infrastructure, hardware, and the services I'm running.
 author: Nasrulla Ameen
 date: 2025-12-08 10:00:00 -0600
-last_modified_at: 2025-12-08 10:00:00 -0600
+last_modified_at: 2025-12-10 21:17:39 -0600
 tags: [homelab, hardware, infrastructure, overview]
 ---
 
@@ -37,8 +37,8 @@ My home lab serves multiple purposes:
 
 ### Networking Equipment
 
-- **Router:** [Your router model]
-- **Switch:** [Your switch model]
+- **Router:** Echolife HG8245W5-6T
+- **Switch:** NETGEAR ProSafe | Plus Switch GS408E
 - **Access Points:** [Your AP configuration]
 
 ### Storage

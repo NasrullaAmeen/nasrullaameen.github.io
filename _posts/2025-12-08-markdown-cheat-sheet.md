@@ -4,7 +4,7 @@ description: >
   A quick reference guide for Markdown syntax used in documentation posts.
 author: Nasrulla Ameen
 date: 2025-12-08 09:00:00 -0600
-last_modified_at: 2025-12-08 09:00:00 -0600
+last_modified_at: 2025-12-10 21:17:39 -0600
 categories: [Reference]
 tags: [markdown, syntax, reference]
 ---
@@ -155,4 +155,3 @@ Use backslash `\` to escape special characters:
 6. Keep line length reasonable (80-100 characters)
 
 Happy writing!
-

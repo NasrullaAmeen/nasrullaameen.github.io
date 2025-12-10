@@ -27,8 +27,9 @@ script_includes:
       <!-- lastmod date -->
       {% if page.last_modified_at and page.last_modified_at != page.date %}
         <span>
-          {{ site.data.locales[lang].post.updated }}
-          {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
+          <em>
+            Last updated: {{ page.last_modified_at | date: "%d %B %Y %H:%M:%S" }}
+          </em>
         </span>
       {% endif %}
 
@@ -191,6 +192,15 @@ script_includes:
 
       {% include post-sharing.html lang=lang %}
     </div>
+
+    <!-- Last modified date -->
+    {% if page.last_modified_at %}
+      <div class="post-last-modified text-muted mt-3 mb-4 pb-2 border-top pt-3 text-center">
+        <em>
+          Last updated: {{ page.last_modified_at | date: "%d %B %Y %H:%M:%S" }}
+        </em>
+      </div>
+    {% endif %}
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->

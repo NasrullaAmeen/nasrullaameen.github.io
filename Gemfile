@@ -11,6 +11,7 @@ gem "jekyll-paginate"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
+gem "logger"
 
 # Platform-specific gems
 platforms :mingw, :x64_mingw, :mswin, :jruby do
