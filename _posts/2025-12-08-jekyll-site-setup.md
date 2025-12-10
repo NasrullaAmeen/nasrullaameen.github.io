@@ -4,6 +4,7 @@ description: >
   A guide on how to set up and deploy a Jekyll site with the Chirpy theme for documentation purposes.
 author: Nasrulla Ameen
 date: 2025-12-08 14:30:00 -0600
+last_modified_at: 2025-12-08 14:30:00 -0600
 categories: [Tutorial, Documentation]
 tags: [jekyll, chirpy, setup, deployment]
 ---
