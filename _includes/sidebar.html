@@ -6,7 +6,7 @@
   </button>
   
   <header class="profile-wrapper">
-    <a href="{{ '/portfolio/' | relative_url }}" id="avatar" class="rounded-circle">
+    <a href="{{ '/portfolio/' | relative_url }}" id="avatar">
       {%- if site.avatar != empty and site.avatar -%}
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}

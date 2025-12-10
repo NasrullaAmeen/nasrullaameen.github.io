@@ -7,7 +7,7 @@
 
 /* Override default link color in categories - JavaScript will set specific colors for tags */
 .categories a {
-  color: inherit !important;
+  color: var(--md-on-surface) !important;
 }
 
 .categories {
@@ -42,6 +42,7 @@
     border-left: none;
     border-right: none;
     padding-left: 2rem;
+    color: var(--md-on-surface) !important;
 
     &:first-child {
       border-top-left-radius: 0;

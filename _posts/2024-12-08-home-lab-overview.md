@@ -6,7 +6,7 @@ author: Nasrulla Ameen
 date: 2025-12-08 10:00:00 -0600
 categories: [Homelab, Infrastructure]
 tags: [homelab, hardware, infrastructure, overview]
-pin: true
+pin: false
 ---
 
 # My HomeLab

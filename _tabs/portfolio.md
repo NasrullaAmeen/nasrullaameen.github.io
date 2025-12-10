@@ -42,8 +42,8 @@ Freshly graduated in the IT field, currently building my experience and skills.
 - Monitoring and logging solutions
 
 **Links:**
-- 📝 [Documentation Posts](/categories/) - Blog posts about the setup
-- 💻 [GitHub](https://github.com/nasrullaameen) - Infrastructure as Code
+- [Documentation Posts](/tags/) - Blog posts about the setup
+- [GitHub](https://github.com/nasrullaameen) - Infrastructure as Code
 
 ---
 
@@ -61,8 +61,8 @@ Freshly graduated in the IT field, currently building my experience and skills.
 - Static site generation
 
 **Links:**
-- 🔗 [Live Site](https://nasrullaameen.github.io) - View the site
-- 💻 [GitHub Repository](https://github.com/nasrullaameen/nasrullaameen.github.io) - Source code
+- [Live Site](https://nasrullaameen.github.io) - View the site
+- [GitHub Repository](https://github.com/nasrullaameen/nasrullaameen.github.io) - Source code
 
 ---
 
@@ -78,7 +78,7 @@ Freshly graduated in the IT field, currently building my experience and skills.
 - Volume management
 
 **Links:**
-- 📝 [Docker Posts](/tags/docker/) - Related blog posts
+- [Docker Posts](/tags/docker/) - Related blog posts
 
 ---
 
@@ -197,7 +197,7 @@ I regularly document my learning journey and projects:
 - **Technical Guides:** Various tutorials and reference materials
 - **Learning Notes:** Documentation of concepts and solutions
 
-Browse all posts by [Category](/categories/) or [Tag](/tags/).
+Browse all posts by [Tag](/tags/).
 
 ---
 

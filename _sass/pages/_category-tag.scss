@@ -36,7 +36,7 @@
 
       font-size: 1.1rem;
       /* Override default link color - JavaScript will set specific colors for tags */
-      color: inherit !important;
+      color: var(--md-on-surface) !important;
 
       @include bp.lt(bp.get(sm)) {
         @include mx.text-ellipsis;

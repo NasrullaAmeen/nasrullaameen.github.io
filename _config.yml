@@ -17,9 +17,9 @@ future: true
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: My IT Journey # the main title
+title: Output Hub # the main title
 
-tagline: Output Hub - Learning, Notes & Documentation # it will display as the subtitle
+tagline: Learning, Notes & Documentation # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   My IT journey output hub - documenting my learning path, technical notes, experiments, and knowledge gained along the way. Built from my notes, for continuous learning and sharing.
@@ -106,7 +106,7 @@ cdn: "https://chirpy-img.netlify.app"
 # - GitHub: "https://github.com/nasrullaameen.png"
 # - Local: "/assets/img/avatar.jpg" (place image in assets/img/)
 # - Any CORS-enabled image URL
-avatar: "https://i.pinimg.com/1200x/b7/cb/eb/b7cbeb02e95893fbf48bcbd13ebaddbb.jpg"
+avatar: "https://avatars.githubusercontent.com/u/122364662?v=4"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -225,10 +225,8 @@ exclude:
   - "package*.json"
 
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled: [tags]
   layouts:
-    category: category
     tag: tag
   permalinks:
     tag: /tags/:name/
-    category: /categories/:name/
